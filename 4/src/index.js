@@ -7,4 +7,10 @@ const colors = [
     'hsl(300, 70%, 85%)',
 ];
 
-// Your code here
+
+let index = 0;
+
+setInterval(() => {
+    document.body.style.backgroundColor = colors[index];
+    index = (index + 1) % colors.length; 
+}, 2000);
