@@ -1,0 +1,54 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f4f8;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+}
+
+#magicButton {
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+#magicButton:hover {
+    background-color: #357abd;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+#targetElement {
+    width: 250px;
+    height: 150px;
+    background-color: #e9ecef;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    color: #495057;
+    transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    border: 2px solid #ced4da;
+}
+
+/* Highlight class that will be applied to the target element */
+#targetElement.highlight {
+    background-color: #ffd700;
+    color: #212529;
+    font-size: 22px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05) rotate(2deg);
+    border-color: #ffc107;
+    font-weight: bold;
+}
